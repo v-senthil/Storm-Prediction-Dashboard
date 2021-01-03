@@ -13,7 +13,7 @@
 3. Template folder contains all the HTML pages.
 4. App.py is the main file.
 5. Run
-pip install requirements.txt
+[pip install requirements.txt]
 Which will install all the required libraries
 6. Run the app
 Python app.py
