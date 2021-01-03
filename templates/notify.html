@@ -1,0 +1,32 @@
+{% block title %} Notify {% endblock title %}
+
+{% extends 'navbar.html' %}
+{% block content %}
+<br>
+
+
+<div class="container">
+    <hr><br>
+    <h2 style="color:white;"> Download FMEA Database as CSV File</h2> <br>
+    <a class="btn btn-info" href="/getcsv">Get CSV File</a><br><br><br><br>
+    <div class="row">
+        <div class="col">
+            <div class="login-light">
+                <form action="/wamsg" method="post">
+                    <h2 style="color:white;">Message</h2>
+                    <div class="illustration"><i class="icon ion-ios-locked-outline"></i></div>
+                    <div class="form-group"><input class="form-control" type="phone" name="wa-phone" placeholder="Phone Number" value="+919481119745" required ></div>
+                    <div class="form-group"><input class="form-control" type="text" name="wa-msg" placeholder="Message" value="Upcoming Storm" required></div>
+                    <div class="form-group"><button class="btn btn-info" type="submit" value>Send Message</button></div>
+                    <div><p style="color: green;">{{wa_error}} </p></div>
+                </form>
+            </div>
+        </div>
+    </div><br><br><hr><br>
+
+    <h2 style="color:white;"> Emergency Call</h2> <br>
+    <a class="btn btn-info" href="tel:+919481119745">Call</a><br><br><hr>
+
+
+
+{% endblock content %}

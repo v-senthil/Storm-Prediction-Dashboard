@@ -1,0 +1,95 @@
+{% block title %} Dashboard {% endblock title %}
+
+{% extends 'navbar.html' %}
+{% block content %}
+
+<form action="/allapimap", method="post" enctype="multipart/form-data">
+  <div class="form-row">
+    <div class="col">
+      <input type="date" class="form-control" required placeholder="YYYY-MM-DD" value="2019-01-01" name="date" id="date" pattern="(?:19|20)\[0-9\]{2}-(?:(?:0\[1-9\]|1\[0-2\])-(?:0\[1-9\]|1\[0-9\]|2\[0-9\])|(?:(?!02)(?:0\[1-9\]|1\[0-2\])-(?:30))|(?:(?:0\[13578\]|1\[02\])-31))"  >
+    </div>
+    <div class="col">
+      <select class="form-control" required id="disaster" name="disaster">
+        <option value="Severe Storm(s)">Severe Storm(s)</option>
+        <option value="Biological">Biological</option>
+        <option value="Chemical">Chemical</option>
+        <option value="Coastal Storm">Coastal Storm</option>
+        <option value="Drought">Drought</option>
+        <option value="Earthquake">Earthquake</option>
+        <option value="Fire">Fire</option>
+        <option value="Fishing Losses">Fishing Losses</option>
+        <option value="Flood">Flood</option>
+        <option value="Freezing">Freezing</option>
+        <option value="Severe Ice Storm">Severe Ice Storm</option>
+        <option value="Snow">Snow</option>
+        <option value="Tornado">Tornado</option>
+        <option value="Volcano">Volcano</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+    <div class="col">
+        <select class="form-control" required id="state" name="state">
+          <option value="AL">Alabama	AL</option>
+          <option value="AK">Alaska	AK</option>
+          <option value="AZ">Arizona	AZ</option>
+          <option value="AR">Arkansas	AR</option>
+          <option value="CA">California	CA</option>
+          <option value="CO">Colorado	CO</option>
+          <option value="CT">Connecticut	CT</option>
+          <option value="DE">Delaware	DE</option>
+          <option value="FL">Florida	FL</option>
+          <option value="GA">Georgia	GA</option>
+          <option value="HI">Hawaii	HI</option>
+          <option value="ID">Idaho	ID</option>
+          <option value="IL">Illinois	IL</option>
+          <option value=IN>Indiana	IN</option>
+          <option value="IA">Iowa	IA</option>
+          <option value="KS">Kansas	KS</option>
+          <option value="KY">Kentucky	KY</option>
+          <option value="LA">Louisiana	LA</option>
+          <option value="ME">Maine	ME</option>
+          <option value="MD">Maryland	MD</option>
+          <option value="MA">Massachusetts</option>
+          <option value="MI">Michigan	MI</option>
+          <option value="MN">Minnesota	MN</option>
+          <option value="MS">Mississippi	MS</option>
+          <option value="MO">Missouri	MO</option>
+          <option value="MT">Montana	MT</option>
+          <option value="NE">Nebraska	NE</option>
+          <option value="NV">Nevada	NV</option>
+          <option value="NH">New Hampshire	NH</option>
+          <option value="NJ">New Jersey	NJ</option>
+          <option value="NM">New Mexico	NM</option>
+          <option value="NY">New York	NY</option>
+          <option value="NC">North Carolina	NC</option>
+          <option value="ND">North Dakota	ND</option>
+          <option value="OH">Ohio	OH</option>
+          <option value="OK">Oklahoma	OK</option>
+          <option value="OR">Oregon	OR</option>
+          <option value="PA">Pennsylvania	PA</option>
+          <option value="RI">Rhode Island	RI</option>
+          <option value="SC">South Carolina	SC</option>
+          <option value="SD">South Dakota	SD</option>
+          <option value="TN">Tennessee	TN</option>
+          <option value="TX">Texas	TX</option>
+          <option value="UT">Utah	UT</option>
+          <option value="VT">Vermont	VT</option>
+          <option value="VA">Virginia	VA</option>
+          <option value="WA">Washington	WA</option>
+          <option value="WV">West Virginia	WV</option>
+          <option value="WI">Wisconsin	WI</option>
+          <option value="WY">Wyoming	WY</option>
+        </select>
+      </div>
+  </div>
+  <br>
+  <button type="submit" class="btn btn-primary">Get Data</button>
+</form>
+
+<div><p style="color: red;">{{error}} </p></div>
+<div><p style="color: white;">{{success}} </p></div>
+
+<embed type="text/html" src="/allmap" width="1915" height="770">
+
+
+{% endblock content %}
