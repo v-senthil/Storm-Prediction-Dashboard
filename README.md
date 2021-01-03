@@ -13,17 +13,15 @@
 3. Template folder contains all the HTML pages.
 4. App.py is the main file.
 5. Run
-[pip install requirements.txt]
+"pip install requirements.txt"
 Which will install all the required libraries
 6. Run the app
-Python app.py
-
+"Python app.py"
 7. There are 4 kinds of filtering present
 - By State
 - By State and Date
 - By Date and Disaster Type
 - By State, Date and Disaster Type
-
 8. Every time you give the input, the app calls the respective API and gets a
 JSON response.
 9. This JSON response is converted into a pandas dataframe.
