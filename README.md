@@ -8,7 +8,7 @@
 5. Twilio (Message Service)
 
 ## Working:
-1. Google Drive link for my project - Click here["https://drive.google.com/drive/folders/1ixST8yk17UYZ7pp1a3ieYEgEtMMN1sTI?usp=sharing"]
+1. Google Drive link for my project - [Click here]["https://drive.google.com/drive/folders/1ixST8yk17UYZ7pp1a3ieYEgEtMMN1sTI?usp=sharing"]
 2. Static folder contains all the CSS, JS, Images and Uploads.
 3. Template folder contains all the HTML pages.
 4. App.py is the main file.
