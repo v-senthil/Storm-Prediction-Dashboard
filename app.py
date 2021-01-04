@@ -86,8 +86,8 @@ def getapi():
                     notification.notify(title="Message form Fema API", message=f"Upcoming Strom Today - {today}",timeout=2)
                     number = '+919481119745'
                     message = "Declaration of Storm"
-                    account_sid = 'ACb2d596698148db142b89d7cb8666c147'
-                    auth_token = 'b89c7902694fd70fc25a788f6746502f'
+                    account_sid = 'SID'
+                    auth_token = 'TOKEN'
                     client = Client(account_sid, auth_token)
                     message = client.messages \
                         .create(
@@ -162,8 +162,8 @@ def stateapi():
                     notification.notify(title="Message form Fema API", message=f"Upcoming Strom Today - {today}",timeout=2)
                     number = '+919481119745'
                     message = "Declaration of Storm"
-                    account_sid = 'ACb2d596698148db142b89d7cb8666c147'
-                    auth_token = 'b89c7902694fd70fc25a788f6746502f'
+                    account_sid = 'SID'
+                    auth_token = 'TOEKN'
                     client = Client(account_sid, auth_token)
                     message = client.messages \
                         .create(
@@ -240,8 +240,8 @@ def disasterapi():
                     notification.notify(title="Message form Fema API", message=f"Upcoming Strom Today - {today}",timeout=2)
                     number = '+919481119745'
                     message = "Declaration of Storm"
-                    account_sid = 'ACb2d596698148db142b89d7cb8666c147'
-                    auth_token = 'b89c7902694fd70fc25a788f6746502f'
+                    account_sid = 'SID'
+                    auth_token = 'TOKEN'
                     client = Client(account_sid, auth_token)
                     message = client.messages \
                         .create(
@@ -319,8 +319,8 @@ def allapimap():
                     notification.notify(title="Message form Fema API", message=f"Upcoming Strom Today - {today}",timeout=2)
                     number = '+919481119745'
                     message = "Declaration of Storm"
-                    account_sid = 'ACb2d596698148db142b89d7cb8666c147'
-                    auth_token = 'b89c7902694fd70fc25a788f6746502f'
+                    account_sid = 'SID'
+                    auth_token = 'TOKEN'
                     client = Client(account_sid, auth_token)
                     message = client.messages \
                         .create(
